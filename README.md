@@ -20,19 +20,6 @@ You will create the harness, iterate on its system prompt, and then test it in v
 
 ## 📋 Getting Started
 
-### Project File Structure
-~~~
-mkdir -p project/starter
-touch project/README.md \
-      project/starter/setup_gateway.py \
-      project/starter/create_harness.py \
-      project/starter/chat.py \
-      project/starter/cleanup_agentcore.py \
-      project/starter/system_prompt.txt \
-      project/starter/generate-eval-dataset.py \
-      CODEOWNERS LICENSE.md README.md
-~~~
-
 ### Prerequisites
 * An **AWS Account** with Amazon Bedrock and AgentCore access enabled in **us-east-1**.
 * **Python 3.9+** installed locally.
