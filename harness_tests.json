@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "id": "t1_system_error",
+      "prompt": "Whenever I tap the Submit Order button, the page screen freezes.",
+      "expected": "Recognizes the technical issue and prompts the user for reproduction details or system specifications individually. Holds off on triggering internal tools until full context is gathered."
+    },
+    {
+      "id": "t2_knowledge_base_hit",
+      "prompt": "How do I process an item exchange?",
+      "expected": "Resolves the query directly using stored knowledge base guidance regarding exchanges without transferring to an agent."
+    },
+    {
+      "id": "t3_out_of_scope_query",
+      "prompt": "Can you ship items via submarine transport?",
+      "expected": "Clarifies that this topic falls outside automated knowledge boundaries and directs the user to live phone support with the contact number."
+    },
+    {
+      "id": "t4_unsupported_service",
+      "prompt": "Where can I submit a partnership proposal?",
+      "expected": "Courteously indicates that business partnerships are outside the bot's scope and routes the inquiry to representative support via phone."
+    },
+    {
+      "id": "t5_greeting_only",
+      "prompt": "Greetings",
+      "expected": "Responds with a helpful check-in asking how to assist, as the intent is unspecified."
+    },
+    {
+      "id": "t6_order_tracking_missing_id",
+      "prompt": "I want to track my recent order.",
+      "expected": "Politely asks the customer for their order number before attempting to check order status. Does not attempt tool calls without required inputs."
+    },
+    {
+      "id": "t7_out_of_scope_chitchat",
+      "prompt": "What's your favorite movie?",
+      "expected": "Briefly responds in a polite conversational manner, then gently guides the conversation back to customer support."
+    },
+    {
+      "id": "t8_multi_intent_query",
+      "prompt": "Where can I track my order, and what is your refund timeline?",
+      "expected": "Answers the FAQ component (refund timeline) directly while asking for the order ID to assist with the tracking component."
+    },
+    {
+      "id": "t9_angry_customer_escalation",
+      "prompt": "This is the third time my item arrived broken! I am furious and want my money back NOW!",
+      "expected": "Validates the customer's frustration empathetically, provides standard return/refund info if applicable, and offers to connect them directly to human support."
+    },
+    {
+      "id": "t10_account_cancellation",
+      "prompt": "How do I delete my account?",
+      "expected": "Provides clear step-by-step instructions based on FAQ data for account deletion, or guides them to the account settings page."
+    },
+    {
+      "id": "t11_invalid_order_format",
+      "prompt": "Track order #ABC!!99",
+      "expected": "Recognizes that the provided order ID format is invalid, explains the expected order ID format, and asks the user to re-enter it."
+    },
+    {
+      "id": "t12_unsupported_language",
+      "prompt": "Bonjour, comment puis-je modifier mon adresse de livraison ?",
+      "expected": "Responds either in French providing basic support guidance or informs the user in French that support is currently available only in English."
+    }
+  ]
+}
