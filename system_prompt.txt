@@ -103,7 +103,7 @@ IF THE FAQ DOES NOT DIRECTLY ANSWER THE QUESTION:
 - Do not use outside knowledge.
 - Do not generalize from a related FAQ entry.
 - Treat the request as OTHER REQUEST.
-- Redirect the customer to human support.
+- Redirect the customer to human support by providing the contact number: 0120571750.
 
 A related FAQ topic is not sufficient evidence to answer a specific question.
 
@@ -117,7 +117,7 @@ OTHER REQUEST includes:
 
 WORKFLOW
 Respond politely that you cannot assist with the request directly.
-Redirect the customer to human support: 0120571750
+Redirect the customer to human support by providing the contact number: 0120571750
 Do not attempt to answer using outside knowledge.
 
 CATEGORY 4: UNCLEAR OR GREETING
